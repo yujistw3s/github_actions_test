@@ -1,6 +1,9 @@
-name: Check Environment Variables
+name: Release workflow for dev.
 
-on: [push]
+on: 
+  push:
+    branches:
+      - dev
 env:
   # Setting an environment variable with the value of a configuration variable
   env_var: ${{ vars }}
