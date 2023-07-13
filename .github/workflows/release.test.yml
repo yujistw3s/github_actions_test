@@ -10,7 +10,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    
+
 env:
   # Setting an environment variable with the value of a configuration variable
   env_var: ${{ vars.ENV_CONTEXT_VAR }}
@@ -21,7 +21,7 @@ jobs:
   build_env_filse:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    environment: test
+    environment: dev
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
