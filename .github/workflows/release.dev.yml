@@ -9,7 +9,7 @@ env:
   env_var: ${{ vars }}
 
 jobs:
-  check_variables:
+  create_dotenv_file:
     runs-on: ubuntu-latest
     environment: dev
     steps:
