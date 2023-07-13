@@ -12,4 +12,4 @@ jobs:
           echo "Workflow Environment Variables:"
           echo "ORG_VARIABLE: $repo_val"
         env:
-          repo_val: ${{ !vars }}
+          repo_val: ${{ vars }}
