@@ -34,4 +34,5 @@ jobs:
         run: cat .env.local.template
 
       - name: check sed enabled
-        run: sed
+        run: | 
+          echo "My Variable: ${{ env.APP_ENV }}"
