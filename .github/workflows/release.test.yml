@@ -13,5 +13,4 @@ jobs:
           env
 
           echo "Organization and Repository Environment Variables:"
-          echo "ORG_VARIABLE: ${{ env.ORG_VARIABLE }}"
-          echo "REPO_VARIABLE: ${{ env.REPO_VARIABLE }}"
+          echo "ORG_VARIABLE: ${{ env.GITHUB_ENV }}"
