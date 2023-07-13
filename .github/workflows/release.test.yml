@@ -13,5 +13,5 @@ jobs:
           env
 
           echo "Organization and Repository Environment Variables:"
-          echo ${{ vars.APP_ENV }}
+          echo ${{ vars.dev.APP_ENV }}
 
