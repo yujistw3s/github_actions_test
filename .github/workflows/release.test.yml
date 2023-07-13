@@ -25,7 +25,7 @@ jobs:
 
       - name: Use variables
         run: |
-          echo env.APP_ENV
+          echo ${{ env }}
 
       - name: check file content
         run: cat .env.local.template
