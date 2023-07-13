@@ -13,4 +13,4 @@ jobs:
           env
 
           echo "Organization and Repository Environment Variables:"
-          echo "ORG_VARIABLE: ${{ vars }}"
+          printenv "ORG_VARIABLE: ${{ vars }}"
