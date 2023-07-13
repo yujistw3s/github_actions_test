@@ -10,6 +10,6 @@ jobs:
       - name: Check Environment Variables
         run: |
           echo "Workflow Environment Variables:"
-          echo "ORG_VARIABLE: $repo_val"
+          echo "ORG_VARIABLE: $REPO_VAL"
         env:
-          repo_val: ${{ vars }}
+          REPO_VAL: ${{ vars }}
