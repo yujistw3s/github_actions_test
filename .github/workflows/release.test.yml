@@ -12,9 +12,7 @@ jobs:
     steps:
       - name: Check Environment Variables
         run: |
-          echo "Workflow Environment Variables:"
-          env
 
-          echo "Organization and Repository Environment Variables:"
           echo $env_var
+          printenv
 
