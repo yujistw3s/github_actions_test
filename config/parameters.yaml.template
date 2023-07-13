@@ -1,1 +1,2 @@
-nakami3
+parameters:
+  app.request.scheme: '${http}'
