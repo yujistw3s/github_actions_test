@@ -1,12 +1,15 @@
-name: Check Environment Variables
+name: Release workflow for dev.
 
-on: [push]
+on: 
+  push:
+    branches:
+      - dev
 env:
   # Setting an environment variable with the value of a configuration variable
   env_var: ${{ vars }}
 
 jobs:
-  check_variables:
+  create_dotenv_file:
     runs-on: ubuntu-latest
     environment: dev
     steps:
