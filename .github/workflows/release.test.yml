@@ -8,7 +8,7 @@ env:
 jobs:
   check_variables:
     runs-on: ubuntu-latest
-    environment: dev
+    environment: stg
     steps:
       - name: Check Environment Variables
         run: |
