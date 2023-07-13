@@ -16,5 +16,5 @@ jobs:
           env
 
           echo "Organization and Repository Environment Variables:"
-          echo $env_var
+          echo $env_var.APP_ENV
 
