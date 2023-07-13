@@ -1,6 +1,9 @@
 name: Check Environment Variables
 
 on: [push]
+env:
+  # Setting an environment variable with the value of a configuration variable
+  env_var: ${{ vars.ENV_CONTEXT_VAR }}
 
 jobs:
   check_variables:
@@ -13,5 +16,5 @@ jobs:
           env
 
           echo "Organization and Repository Environment Variables:"
-          echo ${{ vars.dev.APP_ENV }}
+          echo $env_var
 
