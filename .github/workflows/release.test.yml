@@ -5,7 +5,7 @@ on: [push]
 jobs:
   check_variables:
     runs-on: ubuntu-latest
-
+    environment: dev
     steps:
       - name: Check Environment Variables
         run: |
